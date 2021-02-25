@@ -1,28 +1,27 @@
 html {
   box-sizing: border-box;
+  height: 100%;
+  position: relative;
+  overflow-x: hidden;
 }
 
-// Прижимаем footer к низу страницы
-html,
-body {
-  height: 100%;
-}
 .wrapper {
   display: flex;
   flex-direction: column;
   min-height: 100%;
 }
+
 .content {
   flex: 1 0 auto;
 }
+
 .footer {
   flex: 0 0 auto;
 }
-// Прижимаем footer end к низу страницы
 
 *,
-*::after,
-*::before {
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
@@ -30,7 +29,6 @@ a {
   display: inline-block;
   text-decoration: none;
   color: $text;
-  font-weight: 400;
 }
 
 ul,
@@ -42,14 +40,14 @@ li {
 
 .container {
   max-width: 1200px;
-  padding: 0 15px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 .container-fluid {
   max-width: 100%;
-  padding: 0 30px;
   margin: 0 auto;
+  padding: 0 30px;
 }
 
 @media (max-width: 720px) {
@@ -62,7 +60,11 @@ body {
   font-family: "Roboto-Regular", sans-serif;
   font-size: 15px;
   line-height: 24px;
+  font-weight: 400;
   color: $text;
+  height: 100%;
+  position: relative;
+  overflow-x: hidden;
 }
 
 .page-content {
@@ -71,21 +73,18 @@ body {
 
 .title {
   color: $bg;
-  @include f700;
-  line-height: 60px;
+  font-weight: 700;
   font-size: 36px;
+  line-height: 60px;
   text-align: center;
   margin-bottom: 30px;
-}
-
-.rate-star {
-  display: inline-block;
-  margin-right: 13px;
 }
 
 .breadcrumbs {
   &__inner {
     padding: 45px 0 40px;
+    overflow: hidden;
+    width: 1200px;
   }
 
   &__list {
@@ -117,3 +116,21 @@ body {
     }
   }
 }
+
+.angle-right {
+  position: relative;
+  padding-left: 15px;
+
+  &::before {
+    content: "\f105";
+    font-family: "icomoon";
+    position: absolute;
+    left: 0;
+    color: $green;
+    font-size: 14px;
+  }
+}
+
+// #modal {
+//   display: none;
+// }

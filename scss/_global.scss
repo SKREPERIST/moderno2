@@ -1,7 +1,24 @@
-// font-family: 'Roboto', sans-serif;
 html {
   box-sizing: border-box;
 }
+
+// Прижимаем footer к низу страницы
+html,
+body {
+  height: 100%;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+.content {
+  flex: 1 0 auto;
+}
+.footer {
+  flex: 0 0 auto;
+}
+// Прижимаем footer end к низу страницы
 
 *,
 *::after,
@@ -48,6 +65,10 @@ body {
   color: $text;
 }
 
+.page-content {
+  background-color: $grey;
+}
+
 .title {
   color: $bg;
   @include f700;
@@ -60,4 +81,39 @@ body {
 .rate-star {
   display: inline-block;
   margin-right: 13px;
+}
+
+.breadcrumbs {
+  &__inner {
+    padding: 45px 0 40px;
+  }
+
+  &__list {
+    li {
+      display: inline-block;
+      position: relative;
+
+      & + li {
+        padding-left: 24px;
+
+        &::before {
+          content: "-";
+          position: absolute;
+          left: 8px;
+          color: $green;
+        }
+      }
+
+      &:last-child {
+        a,
+        span {
+          color: $bg;
+        }
+      }
+    }
+
+    a {
+      color: #b0bec5;
+    }
+  }
 }

@@ -1812,12 +1812,14 @@ button.icon-unsorted {
 //////////////////////////////////////////       404
 //////////////////////////////////////////////
 
-.page-404__wrapper {
+.page-404__wrapper,
+.about__wrapper {
   border: 1px solid #dcdcdc;
   background-color: #fff;
   margin-bottom: 150px;
 }
-.page-404__head {
+.page-404__head,
+.about__head {
   @include f500;
   font-size: 24px;
   color: #444;
@@ -1869,7 +1871,26 @@ button.icon-unsorted {
   border-radius: 4px;
   margin-bottom: 100px;
 }
-///////////////////////////
+
+//////////////////////////////////////////////
+//////////////////////////////////////////       ABOUT
+//////////////////////////////////////////////
+.about__inner {
+  padding: 0 50px;
+}
+.about__box {
+  h3 {
+    font-size: 20px;
+    @include f700;
+    color: #444;
+    margin-top: 40px;
+    margin-bottom: 15px;
+  }
+  p {
+    margin-bottom: 40px;
+  }
+}
+
 /*//////////////  */
 @import "media"; /*//////////////  */
 ///////////////////////////

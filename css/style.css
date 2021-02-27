@@ -2631,6 +2631,115 @@ button.icon-unsorted {
   width: 190px;
 }
 
+.settings {
+  padding-bottom: 100px;
+}
+
+.product-one__tabs.settings__tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.product-one__tabs.settings__tabs .tabs {
+  min-width: 270px;
+  margin-right: 30px;
+  border: 1px solid #dedede;
+  border-bottom: none;
+  display: block;
+  text-align: left;
+  height: 100%;
+}
+
+.product-one__tabs.settings__tabs .tabs span {
+  display: block;
+  background-color: #fff;
+  border-bottom: #dedede;
+  padding: 17px 17px 17px 50px;
+  color: #707070;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.product-one__tabs.settings__tabs .tabs span.active {
+  border-bottom: 1px solid #8bc34a;
+  color: #37474f;
+}
+
+.product-one__tabs.settings__tabs .tabs span.active::before {
+  color: #8bc34a;
+}
+
+.product-one__tabs.settings__tabs .tabs span::before {
+  left: 24px;
+  color: #444;
+}
+
+.product-one__tabs.settings__tabs .tabs .tab + .tab {
+  border-left: none;
+}
+
+.product-one__tabs.settings__tabs .tab_content {
+  width: 100%;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.page-box {
+  border: 1px solid #dedede;
+  min-height: 100%;
+}
+
+.page-box__title {
+  border-bottom: 1px solid #dedede;
+  padding: 18px 34px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  color: #263238;
+  font-size: 24px;
+}
+
+.page-box__content {
+  padding: 30px 35px 80px;
+}
+
+.settings__line {
+  margin-bottom: 21px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.settings__line label {
+  color: #444;
+  width: 260px;
+}
+
+.settings__line input {
+  max-width: 540px;
+  width: 100%;
+  height: 40px;
+  color: #000;
+  background-color: #f9f9f9;
+  border: 1px solid #dedede;
+  padding: 0 10px;
+}
+
+.settings__line select {
+  max-width: 540px;
+  width: 100%;
+  height: 40px;
+  color: #707070;
+  background-color: #f9f9f9;
+  border: 1px solid #dedede;
+  padding: 0 10px;
+}
+
 /*//////////////  */
 /*******************************      1900     ******/
 @media (max-width: 1900px) {

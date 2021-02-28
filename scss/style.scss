@@ -1669,6 +1669,37 @@ button.icon-unsorted {
   display: flex;
   justify-content: space-between;
   padding: 30px 0;
+
+  .jq-selectbox__select {
+    height: 27px;
+    padding: 7px 27px 7 10px;
+    border: 1px solid #d5d5d5;
+    border-bottom-color: none;
+    border-radius: 0;
+    background: #fff;
+    box-shadow: none;
+    color: #70838d;
+    text-shadow: none;
+    font-size: 13px;
+    font-family: "Roboto-Regular", sans-serif;
+    line-height: 27px;
+    outline: none;
+  }
+  .jq-selectbox__trigger {
+    border-left: none;
+
+    &::before {
+      font-family: "icomoon";
+      content: "\f0dd";
+      color: $green;
+      position: absolute;
+      top: -2px;
+      right: 10px;
+    }
+  }
+  .jq-selectbox__trigger-arrow {
+    display: none;
+  }
 }
 
 .price__product {
@@ -2316,6 +2347,152 @@ button.icon-unsorted {
     height: 15px;
     background-image: url(../images/pro-bar.jpg);
     background-repeat: repeat;
+  }
+}
+
+//////////////////////////////////////////////
+//////////////////////////////////////////       UPLOAD
+//////////////////////////////////////////////
+.upload__inner {
+  background-color: #fff;
+  border: 1px solid #d7d7d7;
+  margin-bottom: 110px;
+
+  button {
+    color: #fff;
+    background-color: $green;
+    border: none;
+    padding: 15px 36px;
+    margin-left: 175px;
+    cursor: pointer;
+  }
+}
+.upload__inner-title {
+  padding: 16px 35px 18px;
+  @include f500;
+  font-size: 24px;
+  color: $bg;
+  border-bottom: 1px solid #d7d7d7;
+  margin-bottom: 40px;
+}
+.upload__inner-content {
+  margin-bottom: 30px;
+  padding-left: 45px;
+  padding-right: 50px;
+}
+.upload-line {
+  margin-bottom: 25px;
+  display: flex;
+
+  label {
+    min-width: 175px;
+    padding-right: 15px;
+    color: #444;
+    padding-top: 5px;
+    span {
+      color: $green;
+    }
+
+    &::placeholder {
+      color: #707070;
+    }
+  }
+
+  select,
+  input,
+  textarea {
+    width: 100%;
+    display: block;
+    border: 1px solid #d7d7d7;
+    height: 40px;
+    background-color: #f9f9f9;
+    padding: 0 18px;
+  }
+
+  textarea {
+    resize: none;
+    padding: 8px 18px;
+    height: 150px;
+  }
+
+  input[type="file"] {
+    outline: none;
+  }
+
+  .jq-file__browse {
+    top: 5px;
+    right: auto;
+    left: 9px;
+    font-size: 12px;
+    line-height: 26px;
+    padding: 0 12px;
+    border-left: 1px solid #d7d7d7;
+    border: 1px solid #d7d7d7;
+    border-radius: 0;
+    background: #fff;
+    box-shadow: none;
+    color: #444;
+    text-shadow: none;
+  }
+
+  .jq-file {
+    width: 100%;
+    border-radius: 0;
+    box-shadow: none;
+    border: 1px solid #d7d7d7;
+    height: 40px;
+    background-color: #f9f9f9;
+  }
+  .jq-file__name {
+    box-sizing: border-box;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 18px;
+    margin-left: 100px;
+    border: none;
+    border-bottom-color: #b3b3b3;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+    font: 14px/32px Arial, sans-serif;
+    color: #707070;
+    font-size: 12px;
+  }
+
+  .jq-selectbox {
+    width: 100%;
+  }
+
+  .jq-selectbox__select {
+    height: 40px;
+    padding: 0px 18px;
+    border: 1px solid #d7d7d7;
+    background-color: #f9f9f9;
+    box-shadow: none;
+    text-shadow: none;
+    color: #707070;
+    font-family: "Roboto-Regular", sans-serif;
+    border-radius: 0;
+    line-height: 40px;
+  }
+  .jq-selectbox__trigger-arrow {
+    border: none;
+    top: 0;
+    right: 20px;
+    line-height: 40px;
+    font-size: 15px;
+
+    &::before {
+      font-family: "icomoon";
+      content: "\f0dd";
+    }
+  }
+  .jq-selectbox__trigger {
+    border-left: none;
+  }
+  .jq-selectbox li {
+    padding-left: 18px;
   }
 }
 

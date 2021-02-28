@@ -2740,6 +2740,231 @@ button.icon-unsorted {
   padding: 0 10px;
 }
 
+.profile__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.profile__aside {
+  margin-right: 30px;
+  max-width: 270px;
+  width: 100%;
+}
+
+.profile__aside .footer__social-link {
+  margin-bottom: 30px;
+}
+
+.profile__content {
+  width: 100%;
+}
+
+.profile-status {
+  font-size: 13px;
+  border: 1px solid #d6d6d6;
+  color: #707070;
+  padding: 6px 9px 5px 30px;
+  position: relative;
+}
+
+.profile-status::before {
+  position: absolute;
+  content: "";
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  top: 13px;
+  left: 11px;
+}
+
+.profile-on::before {
+  background-color: #8bc34a;
+}
+
+.profile-off::before {
+  background-color: #e74c3c;
+}
+
+.profile__aside-btn {
+  margin-bottom: 13px;
+  text-align: center;
+}
+
+.profile__aside-message {
+  margin-bottom: 17px;
+  display: block;
+  width: 100%;
+  color: #fff;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  padding: 18px 10px;
+  position: relative;
+  background-color: #546e7a;
+  -webkit-box-shadow: 0 1px 2px 0 rgba(69, 90, 100, 0.75);
+          box-shadow: 0 1px 2px 0 rgba(69, 90, 100, 0.75);
+}
+
+.profile__aside-message::before {
+  font-family: "icomoon";
+  content: "\f003";
+  position: absolute;
+  left: 50px;
+  top: 17px;
+}
+
+.profile__aside-following {
+  margin-bottom: 17px;
+  display: block;
+  width: 100%;
+  color: #fff;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  background-color: #8bc34a;
+  padding: 18px 10px;
+  -webkit-box-shadow: 0 1px 2px 0 rgba(69, 90, 100, 0.75);
+          box-shadow: 0 1px 2px 0 rgba(69, 90, 100, 0.75);
+}
+
+.profile__banner {
+  border: 1px solid #dedede;
+  padding: 20px;
+  background-color: #fff;
+  margin-bottom: 35px;
+}
+
+.profile__banner-images {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 332px;
+}
+
+.profile__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid #dedede;
+}
+
+.profile__item {
+  width: 25%;
+  background-color: #fff;
+  text-align: center;
+  padding: 20px 5px 17px;
+}
+
+.profile__item + .profile__item {
+  border-left: 1px solid #dedede;
+}
+
+.profile__item .rate-star.jq-ry-container {
+  display: inline-block;
+}
+
+.profile__item-title {
+  font-size: 14px;
+  color: #263238;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+
+.profile__item-content {
+  font-size: 14px;
+  color: #707070;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+
+.profile__item-content.profile__item-sales {
+  color: #263238;
+}
+
+.profile-settings .product-one__tabs.settings__tabs .tabs span {
+  font-family: "Roboto", sans-serif !important;
+  color: #707070;
+  position: relative;
+}
+
+.profile-settings .product-one__tabs.settings__tabs .tabs span.active::before {
+  color: #8bc34a;
+}
+
+.profile-settings .product-one__tabs.settings__tabs .tabs span::before {
+  font-family: "icomoon";
+  position: absolute;
+  top: 16px;
+  left: 27px;
+  color: #d0d0d0;
+  font-size: 14px;
+}
+
+.personal-box {
+  background-color: #fff;
+  padding: 35px 40px 25px;
+  border: 1px solid #dedede;
+}
+
+.personal-box__title {
+  margin-bottom: 25px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: #263238;
+  font-size: 20px;
+}
+
+.personal-box__text {
+  margin-bottom: 20px;
+}
+
+.personal-box__text p {
+  margin-bottom: 20px;
+  color: #707070;
+}
+
+.personal-box__item-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.personal-box__item-name {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #263238;
+  font-style: italic;
+}
+
+.personal-box__item-number {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #263238;
+}
+
+.personal-box__item-line {
+  height: 15px;
+  background-color: #f4f4f4;
+  border-radius: 3px;
+  margin-bottom: 23px;
+}
+
+.personal-box__item-line span {
+  display: block;
+  border-radius: 3px;
+  height: 15px;
+  background-image: url(../images/pro-bar.jpg);
+  background-repeat: repeat;
+}
+
 /*//////////////  */
 /*******************************      1900     ******/
 @media (max-width: 1900px) {

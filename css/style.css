@@ -3048,22 +3048,6 @@ button.icon-unsorted {
   color: #8bc34a;
 }
 
-.upload-line label::-webkit-input-placeholder {
-  color: #707070;
-}
-
-.upload-line label:-ms-input-placeholder {
-  color: #707070;
-}
-
-.upload-line label::-ms-input-placeholder {
-  color: #707070;
-}
-
-.upload-line label::placeholder {
-  color: #707070;
-}
-
 .upload-line select,
 .upload-line input,
 .upload-line textarea {
@@ -3073,6 +3057,30 @@ button.icon-unsorted {
   height: 40px;
   background-color: #f9f9f9;
   padding: 0 18px;
+}
+
+.upload-line select::-webkit-input-placeholder,
+.upload-line input::-webkit-input-placeholder,
+.upload-line textarea::-webkit-input-placeholder {
+  color: #707070;
+}
+
+.upload-line select:-ms-input-placeholder,
+.upload-line input:-ms-input-placeholder,
+.upload-line textarea:-ms-input-placeholder {
+  color: #707070;
+}
+
+.upload-line select::-ms-input-placeholder,
+.upload-line input::-ms-input-placeholder,
+.upload-line textarea::-ms-input-placeholder {
+  color: #707070;
+}
+
+.upload-line select::placeholder,
+.upload-line input::placeholder,
+.upload-line textarea::placeholder {
+  color: #707070;
 }
 
 .upload-line textarea {
@@ -3168,6 +3176,184 @@ button.icon-unsorted {
 
 .upload-line .jq-selectbox li {
   padding-left: 18px;
+}
+
+.withdrawals__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 110px;
+}
+
+.withdrawals__col {
+  max-width: 570px;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #dedede;
+  height: 100%;
+}
+
+.withdrawals__title {
+  font-size: 24px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  padding: 18px 32px 24px;
+  border-bottom: 1px solid #dedede;
+  margin-bottom: 30px;
+  color: #263238;
+}
+
+.withdrawals__content {
+  padding-left: 35px;
+  padding-right: 40px;
+}
+
+.withdrawals__content button {
+  margin-bottom: 50px;
+  color: #fff;
+  background-color: #8bc34a;
+  border: none;
+  padding: 15px 36px;
+  cursor: pointer;
+}
+
+.Withdrawals__form-line {
+  margin-bottom: 25px;
+}
+
+.Withdrawals__form-line label {
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  margin-bottom: 15px;
+  color: #263238;
+}
+
+.Withdrawals__form-line label span {
+  color: #8bc34a;
+}
+
+.Withdrawals__form-line input,
+.Withdrawals__form-line select {
+  width: 100%;
+  display: block;
+  border: 1px solid #d7d7d7;
+  height: 40px;
+  background-color: #f9f9f9;
+  padding: 0 18px;
+}
+
+.Withdrawals__form-line input::-webkit-input-placeholder,
+.Withdrawals__form-line select::-webkit-input-placeholder {
+  color: #707070;
+}
+
+.Withdrawals__form-line input:-ms-input-placeholder,
+.Withdrawals__form-line select:-ms-input-placeholder {
+  color: #707070;
+}
+
+.Withdrawals__form-line input::-ms-input-placeholder,
+.Withdrawals__form-line select::-ms-input-placeholder {
+  color: #707070;
+}
+
+.Withdrawals__form-line input::placeholder,
+.Withdrawals__form-line select::placeholder {
+  color: #707070;
+}
+
+.Withdrawals__form-line select .jq-selectbox {
+  width: 100%;
+}
+
+.Withdrawals__form-line select .jq-selectbox__select {
+  height: 40px;
+  padding: 0px 18px;
+  border: 1px solid #d7d7d7;
+  background-color: #f9f9f9;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  text-shadow: none;
+  color: #707070;
+  font-family: "Roboto-Regular", sans-serif;
+  border-radius: 0;
+  line-height: 40px;
+}
+
+.Withdrawals__form-line select .jq-selectbox__trigger-arrow {
+  border: none;
+  top: 0;
+  right: 20px;
+  line-height: 40px;
+  font-size: 15px;
+}
+
+.Withdrawals__form-line select .jq-selectbox__trigger-arrow::before {
+  font-family: "icomoon";
+  content: "\f0dd";
+}
+
+.Withdrawals__form-line select .jq-selectbox__trigger {
+  border-left: none;
+}
+
+.Withdrawals__form-line select .jq-selectbox li {
+  padding-left: 18px;
+}
+
+.withdrawals__content-items {
+  padding-bottom: 35px;
+}
+
+.withdrawals__content-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 42px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 13px;
+  color: #444;
+}
+
+.withdrawals__content-item:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+.withdrawals__content-data {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  width: 154px;
+  padding-left: 20px;
+}
+
+.withdrawals__content-email {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  width: 180px;
+}
+
+.withdrawals__content-price {
+  width: 70px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
+
+.withdrawals__content-status {
+  width: 88px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
+
+.withdrawals__content-status.withdrawals__content-paid {
+  color: #8bc34a;
 }
 
 /*//////////////  */
